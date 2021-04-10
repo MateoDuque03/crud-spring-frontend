@@ -1,0 +1,9 @@
+<button class="btn btn-success" (click)="setShowButton()">{{ valueButton }}</button>
+<div class="card">
+  <div class="card-header bg-dark text-white">
+    Listado de cursos
+  </div>
+  <ul class="list-group" *ngIf="showButton">
+    <li class="list-group-item" *ngFor='let curso of listaCurso'>{{ curso }}</li>
+  </ul>
+</div>
